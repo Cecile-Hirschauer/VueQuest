@@ -12,7 +12,7 @@
         </header>
 
         <!-- Main Content -->
-        <main class="container">
+        <main>
             <!-- Slot for main content -->
             <slot name="main"></slot>
         </main>
@@ -53,16 +53,28 @@ main {
     height: 90%;
     flex-direction: column;
     margin-top: 40px;
-    align-items: center;
-    justify-content: center;
+
 }
 
-h1 {
+header h1 {
     font-size: 60px;
     font-weight: 600;
     background: -webkit-linear-gradient(#FFBF00, #FFA23A, #D24317);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #FCEFD9;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #FDDEA6;
+  margin-bottom: 1rem;
 }
 </style>

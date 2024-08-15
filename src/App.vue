@@ -1,8 +1,13 @@
 <template>
   <Layout>
     <template v-slot:main>
-      <div>
-        {{ quiz }}
+      <div v-if="state === 'error'">
+        Impossible de charger le quiz
+      </div>
+      <div :aria-busy="state === 'loading'">
+        <div class="container">
+          <Quiz :quiz="quiz" v-if="quiz" />
+        </div>
       </div>
     </template>
   </Layout>
@@ -12,8 +17,10 @@
 import { ref, onMounted } from "vue"
 
 import Layout from "./components/Layout.vue"
+import Quiz from "./components/Quiz.vue";
 
 const quiz = ref(null)
+const state = ref('loading')
 
 onMounted(() => {
   fetch("/quiz.json")
@@ -25,11 +32,21 @@ onMounted(() => {
     })
     .then(data => {
       quiz.value = data
+      state.value = "idle"
     })
     .catch(error => {
       console.error(error)
+      state.value = "error"
     })
-  console.log(quiz.data)
+
 })
 
 </script>
+
+<style>
+.container {
+  margin-top: 2rem;
+  text-align: left;
+
+}
+</style>
