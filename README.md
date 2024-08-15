@@ -16,7 +16,8 @@ VueQuest is an interactive quiz application built with Vue.js, TypeScript, and P
 2. **`Quiz.vue`**: The main component that displays the quiz, manages questions, and navigates through steps.
 3. **`Progress.vue`**: Displays the user's progress through the quiz questions.
 4. **`Question.vue`**: Shows a single question with its choices and handles answer selection.
-5. **`Recap.vue`**: Displays a summary of the results with the final score and a personalized message based on the outcome.
+5. **`Answer.vue`**: Handles the display and selection of an individual answer, showing whether it is correct or incorrect based on user input.
+6. **`Recap.vue`**: Displays a summary of the results with the final score and a personalized message based on the outcome.
 
 ## Installation
 
