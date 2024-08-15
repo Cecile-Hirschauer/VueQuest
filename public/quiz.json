@@ -1,0 +1,99 @@
+{
+    "title": "Questionnaire sur les Films et Séries",
+    "minimum_score": 4,
+    "success_message": "Félicitations! Vous êtes un véritable cinéphile!",
+    "failure_message": "Dommage! Vous devriez regarder plus de films et séries.",
+    "questions": [
+      {
+        "question": "Dans quel film trouve-t-on le personnage de Jack Dawson?",
+        "choices": ["Titanic", "Le Seigneur des Anneaux", "Inception", "Avatar"],
+        "correct_answer": "Titanic"
+      },
+      {
+        "question": "Quelle série met en scène le personnage de Walter White?",
+        "choices": [
+          "Breaking Bad",
+          "Stranger Things",
+          "Game of Thrones",
+          "The Walking Dead"
+        ],
+        "correct_answer": "Breaking Bad"
+      },
+      {
+        "question": "Dans quel film Harry Potter rencontre-t-il pour la première fois Lord Voldemort?",
+        "choices": [
+          "Harry Potter à l'école des sorciers",
+          "Harry Potter et la Chambre des secrets",
+          "Harry Potter et le Prisonnier d'Azkaban",
+          "Harry Potter et la Coupe de feu"
+        ],
+        "correct_answer": "Harry Potter à l'école des sorciers"
+      },
+      {
+        "question": "Quel est le nom de l'intelligence artificielle dans '2001: L'Odyssée de l'espace'?",
+        "choices": ["HAL 9000", "Siri", "Cortana", "Jarvis"],
+        "correct_answer": "HAL 9000"
+      },
+      {
+        "question": "Qui joue le rôle principal dans la série 'Sherlock' de la BBC?",
+        "choices": [
+          "Benedict Cumberbatch",
+          "David Tennant",
+          "Matt Smith",
+          "Tom Hiddleston"
+        ],
+        "correct_answer": "Benedict Cumberbatch"
+      },
+      {
+        "question": "Quel film a remporté l'Oscar du meilleur film en 1994?",
+        "choices": ["Forrest Gump", "Pulp Fiction", "Les Évadés", "La Liste de Schindler"],
+        "correct_answer": "Forrest Gump"
+      },
+      {
+        "question": "Dans quelle série télévisée trouve-t-on les personnages de Jon Snow et Daenerys Targaryen?",
+        "choices": ["Game of Thrones", "Vikings", "The Witcher", "The Last Kingdom"],
+        "correct_answer": "Game of Thrones"
+      },
+      {
+        "question": "Qui a réalisé le film 'Inception'?",
+        "choices": ["Christopher Nolan", "Steven Spielberg", "James Cameron", "Quentin Tarantino"],
+        "correct_answer": "Christopher Nolan"
+      },
+      {
+        "question": "Dans quel film trouve-t-on le personnage de Tony Stark?",
+        "choices": ["Iron Man", "Batman Begins", "Spider-Man", "Superman Returns"],
+        "correct_answer": "Iron Man"
+      },
+      {
+        "question": "Quelle actrice joue le rôle de Katniss Everdeen dans la série de films 'Hunger Games'?",
+        "choices": ["Jennifer Lawrence", "Emma Watson", "Scarlett Johansson", "Natalie Portman"],
+        "correct_answer": "Jennifer Lawrence"
+      },
+      {
+        "question": "Dans quel film la réplique 'Here's Johnny!' est-elle prononcée?",
+        "choices": ["The Shining", "Pulp Fiction", "Le Silence des agneaux", "Psychose"],
+        "correct_answer": "The Shining"
+      },
+      {
+        "question": "Quelle série télévisée est basée sur les romans de George R.R. Martin?",
+        "choices": ["Game of Thrones", "The Expanse", "Outlander", "Shadow and Bone"],
+        "correct_answer": "Game of Thrones"
+      },
+      {
+        "question": "Qui joue le rôle de Jack Sparrow dans la série de films 'Pirates des Caraïbes'?",
+        "choices": ["Johnny Depp", "Orlando Bloom", "Leonardo DiCaprio", "Brad Pitt"],
+        "correct_answer": "Johnny Depp"
+      },
+      {
+        "question": "Dans quel film trouve-t-on le personnage de Neo?",
+        "choices": ["The Matrix", "Blade Runner", "Minority Report", "Equilibrium"],
+        "correct_answer": "The Matrix"
+      },
+      {
+        "question": "Quel réalisateur est connu pour ses films de science-fiction tels que 'Blade Runner' et 'Alien'?",
+        "choices": ["Ridley Scott", "Stanley Kubrick", "James Cameron", "Steven Spielberg"],
+        "correct_answer": "Ridley Scott"
+      }
+    ]
+  }
+  
