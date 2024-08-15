@@ -1,26 +1,31 @@
 <script setup lang="ts">
 import { computed, ref } from 'vue';
+import { shuffleArray } from "../functions/array.ts";
+import Answer from "./Answer.vue";
 
 
-const props = defineProps({
-  question: Object
-})
+const props = defineProps<{
+  question: object
+}>()
 
 const emits = defineEmits(['answer'])
 const answer = ref(null)
 const hasAnswer = computed(() => answer.value !== null)
-
+const randomChoices = computed(() => shuffleArray(props.question.choices))
 </script>
 
 <template>
   <div class="question">
     <h3>{{ question?.question }}</h3>
     <ul>
-      <li v-for="(choice, index) in question?.choices" :key="choice">
-        <label :for="`answer${index}`">
-          <input type="radio" name="answer" :id="`answer${index}`" v-model="answer" :value="choice">
-          {{ choice }}
-        </label>
+      <li v-for="(choice, index) in randomChoices" :key="choice">
+        <Answer
+          :id="`answer${index}`"
+          :disabled="hasAnswer"
+          :value="choice"
+          v-model="answer"
+          :correctAnswer="question.correct_answer"
+        />
       </li>
     </ul>
     <button :disabled="!hasAnswer" @click="emits('answer', answer)" class="primary">Question suivante</button>

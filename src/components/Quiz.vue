@@ -7,10 +7,8 @@ import Recap from "./Recap.vue";
 
 const state = ref('question')
 const step = ref(0)
-const props = defineProps({
-  quiz: Object
-})
-const answers = ref(props.quiz?.questions.map(() => null))
+const props = defineProps<{ quiz: object }>()
+const answers = ref(props.quiz.questions.map(() => null))
 const question = computed(() => props.quiz?.questions[step.value]
 )
 
