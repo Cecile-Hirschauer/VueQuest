@@ -1,5 +1,46 @@
-# Vue 3 + TypeScript + Vite
+# VueQuest
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+VueQuest is an interactive quiz application built with Vue.js, TypeScript, and Pico.css. The app allows users to test their knowledge on various topics by answering a series of multiple-choice questions.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Features
+
+- **Structured Layout**: A clear user interface with a custom `Layout.vue` featuring a header, main content, and footer.
+- **State Management**: Handles loading, error, and quiz display states.
+- **Interactive Quiz**: Dynamically displays questions, tracks user answers, and shows the final score.
+- **Dark Theme**: The design is optimized for a dark theme using Pico.css.
+- **Shuffle Functionality**: Randomizes the answer choices for each question using a `shuffleArray` utility function.
+
+## Component Structure
+
+1. **`Layout.vue`**: Manages the overall structure of the app with a header, main content, and footer.
+2. **`Quiz.vue`**: The main component that displays the quiz, manages questions, and navigates through steps.
+3. **`Progress.vue`**: Displays the user's progress through the quiz questions.
+4. **`Question.vue`**: Shows a single question with its choices and handles answer selection.
+5. **`Recap.vue`**: Displays a summary of the results with the final score and a personalized message based on the outcome.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/Cecile-Hirschauer/VueQuest.git
+Navigate to the project directory:
+
+```bash
+cd vuequest
+```
+2. Install dependencies:
+
+```bash
+npm install
+```
+3. Start the development server:
+
+```bash
+npm run dev
+```
+
+### Usage
+- **Loading the Quiz:** The quiz.json file is loaded from the public folder on component mount. If an error occurs, an error message is displayed to the user.
+- **Answering Questions:** Users can select an answer for each question. Answers are stored and used to calculate the final score.
+- **Viewing Results:** After answering all questions, a recap of the score is displayed with a success or failure message.
