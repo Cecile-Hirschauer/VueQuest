@@ -24,17 +24,18 @@ VueQuest is an interactive quiz application built with Vue.js, TypeScript, and P
 
    ```bash
    git clone https://github.com/Cecile-Hirschauer/VueQuest.git
-Navigate to the project directory:
+   
+2. Navigate to the project directory:
 
 ```bash
 cd vuequest
 ```
-2. Install dependencies:
+3. Install dependencies:
 
 ```bash
 npm install
 ```
-3. Start the development server:
+4. Start the development server:
 
 ```bash
 npm run dev
