@@ -31,7 +31,7 @@ const addAnswer = (answer: string) => {
     <Progress :value="step" :max="quiz?.questions.length - 1" />
     <Question :key="question.question" :question="question" v-if="state === 'question'" @answer="addAnswer" />
     <Recap v-if="state === 'recap'" :answers="answers" :quiz="quiz"/>
-    {{answers}}
+
   </div>
 </template>
 

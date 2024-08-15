@@ -14,11 +14,18 @@ const classes = computed(() => ({
   right: props.disabled && props.value === props.correctAnswer,
   wrong: props.disabled && props.value !== props.correctAnswer && model.value === props.value
 }))
+interface Emits {
+  (event: 'change', payload: Event): void;
+}
+const emits = defineEmits<Emits>()
+const onChange = (event: Event) => {
+  emits('change', event)
+}
 </script>
 
 <template>
   <label :for="id" :class="classes">
-    <input :disabled="disabled" type="radio" name="answer" :id="id" v-model="model" :value="value">
+    <input :disabled="disabled" type="radio" name="answer" :id="id" @change="onChange" :value="value" v-model="model">
     {{ value }}
   </label>
 </template>
